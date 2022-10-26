@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block scripts %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pure-min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet-search.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fullscreen.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.defaultextent.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/l.control.sidebar.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/easy-button.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/markercluster.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/markercluster.default.css') }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="{{ url_for('static', filename='js/leaflet.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/leaflet-search.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/markers.geojson') }}"></script>
+    <script src="{{ url_for('static', filename='js/fullscreen.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/leaflet-hash.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/leaflet.defaultextent.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/l.control.sidebar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/easy-button.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/leaflet.markercluster.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/leaflet.markercluster.layersupport.js') }}"></script>
+{% endblock %}
+
+{% block title %}
+Язичницькі святині України
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+    <div id="sidebar" class="sidebar">
+
+        <!-- START HERE -->
+
+        <form name='noteForm' class="gform pure-form pure-form-stacked" method="POST"
+            data-email="zaharchenko.yurij@gmail.com"
+            action="/">
+
+            <div id="form-elements" class="form-elements" style="display:none;">
+                <fieldset class="pure-group">
+                    <label for="name">Назва: </label>
+                    <input id="name" name="name" required placeholder="Про що Ви хочете нам розповісти?" />
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <label for="message">Повідомлення: </label>
+                    <textarea id="message" name="message" rows="10" required
+                        placeholder="Тут Ви можете описати що знаходиться в цьому місці, дати посилання на світлини, статті, ресурси, групи в соціальних мережах, присвячені йому і взагалі повідомити все що вважаєте за потрібне"></textarea>
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <label for="username">Ваше ім'я:</label>
+                    <input id="username" name="username" value="" placeholder="Як до Вас звертатись" />
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <label for="contact">Ми можемо захотіти щось уточнити, тому залиште будь ласка якийсь свій контакт:
+                    </label>
+                    <input id="contact" name="contact" placeholder="E-mail, (Viber/Telegram/WatsApp), Facebook..." />
+                </fieldset>
+
+                <fieldset class="pure-group honeypot-field" style="display:none;">
+                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
+                        empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                    <input id="honeypot" type="text" name="honeypot" value="" />
+                </fieldset>
+
+                <input id="longitude" type="text" name="longitude" value="" style="display:none;" />
+                <input id="latitude" type="text" name="latitude" value="" style="display:none;" />
+                <input id="zoom" type="text" name="zoom" value="" style="display:none;" />
+
+                <button class="button-success pure-button button-xlarge" type="submit">
+                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+            </div>
+
+            <div class="thankyou_message" id="thankyou_message" style="display:none;">
+                <h2><em>Дякуємо за допомогу!</em></h2>
+            </div>
+        </form>
+
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" src="{{ url_for('static', filename='js/form-submission-handler.js') }}"></script>
+        <!-- END -->
+
+    </div>
+
+    <div id="map"></div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/myscript.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,742 @@
+var sanctuarys = {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.512475,50.4611416666667 ]
+    },
+    "properties": {
+    "name": "Алтар і капище старожитньої віри Оурайа Кия Щека Хорива і Либеді",
+    "description": "<h3 align=center>Алтар і капище старожитньої віри Оурайа Кия Щека Хорива і Либеді<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/00/01/00/52_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/1256288/uk/Язичницьке-капище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.0969722222222,49.2317083333333 ]
+    },
+    "properties": {
+    "name": "Будинок рідновірів (Раштівці)",
+    "description": "<h3 align=center>Будинок рідновірів<br>Раштівці</h3><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.057425,48.4850166666667 ]
+    },
+    "properties": {
+    "name": "Древнеславянское капище (Днепр)",
+    "description": "<h3 align=center>Древнеславянское капище<br>Днепр</h3><br><a target=_blank href=http://wikimapia.org/31030063/ru/Древнеславянское-капище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.508056,50.354444 ]
+    },
+    "properties": {
+    "name": "Дуб Перуна в Пирогово (Київ)",
+    "description": "<h3 align=center>Дуб Перуна в Пирогово<br>Київ</h3><div align=center><img height=250 src=https://cdn.segodnya.ua/img/gallery/4474/87/478827_main.jpg></div><font size=-3>Фото з сайту <a href=http://www.segodnya.ua//>www.segodnya.ua/</a></font><br>Дуб, довжина стовбура якого 10 м., було знайдено у гирлі Десни ще в 1975 році. На ньому були сліди дев’яти отворів у вигляді фігури квадрату, куди вставлялися щелепи кабанів. Археологами-дослідниками пам’ятки були зроблені висновки щодо ритуального призначення даного дерева. Після дослідження та консервації щелепи були передані до Музею історії міста Києва, а дуб - перевезений до скансену-музею в Пирогові.<br><a target=_blank href=http://wikimapia.org/38205061/uk/%D0%AF%D0%B7%D0%B8%D1%87%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9-%D0%B4%D1%83%D0%B1-%D0%B4%D0%B0%D0%B2%D0%BD%D1%96%D1%85-%D1%81%D0%BB%D0%BE%D0%B2-%D1%8F%D0%BD-VIII-%D1%81%D1%82#ge><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br><a target=_blank href=http://prostir.museum/ua/post/30601><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.8353611111111,49.8103138888889 ]
+    },
+    "properties": {
+    "name": "Идол богу Роду (Печеніги)",
+    "description": "<h3 align=center>Идол богу Роду<br>Печеніги</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/06/24/51/24_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/34835303/ru/Идол-богу-Роду><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.7940277777778,48.5441222222222 ]
+    },
+    "properties": {
+    "name": "Історико-духовний комплекс &quot;Права&quot; (Обухівка, Дніпро)",
+    "description": "<h3 align=center>Історико-духовний комплекс &quot;Права&quot;<br>Обухівка, Дніпро</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/47/74/47_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Громада &quot;Полум&#39;я Роду&quot; Руського Православного Кола у Священному гаю біля річки Оріль облаштувала святилище слов&#39;янських Богів. Це місце прочанства надихає сповідників Рідної Віри до єдності з рідною Природою. Тут проводяться щонедільні Богославлення, народні свята, фестивалі.<br><a target=_blank href=yaro.dp.ua><img src= hspace=10>Офіційний сайт</a><br><a target=_blank href=http://wikimapia.org/28361249/uk/Історико-духовний-комплекс-Права><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.6758805555556,44.8691888888889 ]
+    },
+    "properties": {
+    "name": "Капище (пансіонат &quot;Светоч&quot;, гора Хургуч)",
+    "description": "<h3 align=center>Капище<br>пансіонат &quot;Светоч&quot;, гора Хургуч</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/05/23/34/75_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/34220742/ru/Святилище-сектантов><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.3248027777778,51.4958666666667 ]
+    },
+    "properties": {
+    "name": "Капище (Чернигов)",
+    "description": "<h3 align=center>Капище<br>Чернигов</h3><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.8530138888889,48.5304666666667 ]
+    },
+    "properties": {
+    "name": "Капище (Чинадиєво)",
+    "description": "<h3 align=center>Капище<br>Чинадиєво</h3><br><a target=_blank href=http://stardancer.at.ua/publ/nashi_poezdki/nashi_poezdki/karpaty_2012_slavjanskoe_kapishhe_karpatskij_mengir_dolina_kamnej_khustskij_zamok_shajan/46-1-0-2632><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0269777777778,48.4175944444444 ]
+    },
+    "properties": {
+    "name": "Капище Cварога (Днепр)",
+    "description": "<h3 align=center>Капище Cварога<br>Днепр</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/05/59/31/59_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/28161584/ru/Капище-Cварога><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.5762611111111,49.6381916666667 ]
+    },
+    "properties": {
+    "name": "Капище рідновірів м. Полтава",
+    "description": "<h3 align=center>Капище рідновірів м. Полтава<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/16/83/66_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Святилище прадавніх слов&#39;ян зведено на місці поховання воїнів під час Другої світової війни при взятті укріпрайону. На цьому місці знаходиться поселення і могильник скіфського часу (7-3 ст. до н.е.)<br><a target=_blank href=http://wikimapia.org/20179281/uk/Капище-рідновірів><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.7592194444444,46.673375 ]
+    },
+    "properties": {
+    "name": "Капище Родноверов в Херсоне",
+    "description": "<h3 align=center>Капище Родноверов в Херсоне<br></h3><br><a target=_blank href=http://wikimapia.org/22061326/ru/Капище-Родноверов-в-Херсоне><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.2972916666667,50.0130472222222 ]
+    },
+    "properties": {
+    "name": "Капище язычников (Харьков)",
+    "description": "<h3 align=center>Капище язычников<br>Харьков</h3><br><a target=_blank href=http://wikimapia.org/37467404/ru/Капище-язычников><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0852916666667,47.8540916666667 ]
+    },
+    "properties": {
+    "name": "Кромлехи (Запоріжжя)",
+    "description": "<h3 align=center>Кромлехи<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/52/12/78_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Сучасна культова споруду, стилізація під давні святилища-обсерваторії, що складається із двох кіл - великого і малого. <br><a target=_blank href=http://wikimapia.org/31928211/uk/Кромлехи><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.2858805555556,51.4790027777778 ]
+    },
+    "properties": {
+    "name": "Місце проведення обрядів громадою Коло Сіверщини",
+    "description": "<h3 align=center>Місце проведення обрядів громадою Коло Сіверщини<br></h3><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.057825,49.8484222222222 ]
+    },
+    "properties": {
+    "name": "Місце ритуалів рідновірів (Львів)",
+    "description": "<h3 align=center>Місце ритуалів рідновірів<br>Львів</h3>На цьому пагорбі, що поблизу Святовитового Поля, львівські рідновіри проводять славлення<br><a target=_blank href=www.svit.in.ua/sva/mi20.htm><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0667361111111,47.8599083333333 ]
+    },
+    "properties": {
+    "name": "Образ Перуна (Запоріжжя)",
+    "description": "<h3 align=center>Образ Перуна<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/52/11/65_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Дерев&#39;яний образ слов&#39;янського Бога Перуна (різьбяр Вадим Літвінов) <br><a target=_blank href=http://wikimapia.org/31816527/uk/Образ-Перуна><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.5156944444444,50.457575 ]
+    },
+    "properties": {
+    "name": "Перун в городищі Кия",
+    "description": "<h3 align=center>Перун в городищі Кия<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/02/64/66/36_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/19664450/uk/Ідол-Перуна><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.3873611111111,47.7060916666667 ]
+    },
+    "properties": {
+    "name": "Перун на Саур-Могилі (Григоровка)",
+    "description": "<h3 align=center>Перун на Саур-Могилі<br>Григоровка</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/48/24/97_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>На вершині Савур-Могили знаходиться дерев&#39;яний образ Перуна (різьбяр Вадим Літвінов) і солярні знаки, складені з невеликих каменів - сучасне рідновірське святилище.<br><a target=_blank href=https://svit.in.ua/><img src=https://sites.google.com/site/zaharchenkoyurij/troll.jpg hspace=10>Офіційний сайт</a><br><a target=_blank href=https://www.facebook.com/%D0%A0%D1%83%D1%81%D1%8C%D0%BA%D0%B5-%D0%9F%D1%80%D0%B0%D0%B2%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BD%D0%B5-%D0%9A%D0%BE%D0%BB%D0%BE-164656026901985/><img src=/icons/facebook.jpg hspace=10>Facebook</a><br><a target=_blank href=https://twitter.com/Svitovyt><img src=/icons/twitter.jpg hspace=10>Twitter</a><br><a target=_blank href=https://www.youtube.com/channel/UCbWUOXeSgnm9a5HXBuLHLgA/featured><img src=/icons/youtube.jpg hspace=10>YouTube</a><br><a target=_blank href=http://svitovyt.blogspot.com/><img src=/icons/blogspot.jpg hspace=10>Blogspot</a><br><a target=_blank href=http://wikimapia.org/31111430/uk/Рідновірське-святилище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0753694444444,47.8502638888889 ]
+    },
+    "properties": {
+    "name": "Святилище &quot;Триглав&quot; човнового типу (Запоріжжя)",
+    "description": "<h3 align=center>Святилище &quot;Триглав&quot; човнового типу<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/02/32/77/69_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Сучасне Святилище &quot;Триглав&quot; має форму човна. Розташування Богів за пантеоном князя Володимира в &quot;Повісті врем&#39;яних літ&quot; наступне. З півдня - Білобог, з півночі - Чорнобог; основний Триглав - Перун (середина), Дажбог (праворуч), Макоша (ліворуч), перед ними - Собака Симаргл (ніс човна вказує на схід). Посередині святилища Треба (колода для жертвопринесення, яка символізує, усічену щоглу) - це Стрибог (Бог Вітрів). В західній частині розташована корма - Хорс у вигляді прямокутної споруди з колод з образами вовків на чотири боки, далі за ним місце для кормового. На західному вході на святилищі розташований Ключник зі щілиною для сокири-ключа і Чур-охоронець з мечем. <br><a target=_blank href=https://svit.in.ua/><img src=https://sites.google.com/site/zaharchenkoyurij/troll.jpg hspace=10>Офіційний сайт</a><br><a target=_blank href=https://www.facebook.com/%D0%A0%D1%83%D1%81%D1%8C%D0%BA%D0%B5-%D0%9F%D1%80%D0%B0%D0%B2%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BD%D0%B5-%D0%9A%D0%BE%D0%BB%D0%BE-164656026901985/><img src=/icons/facebook.jpg hspace=10>Facebook</a><br><a target=_blank href=https://twitter.com/Svitovyt><img src=/icons/twitter.jpg hspace=10>Twitter</a><br><a target=_blank href=https://www.youtube.com/channel/UCbWUOXeSgnm9a5HXBuLHLgA/featured><img src=/icons/youtube.jpg hspace=10>YouTube</a><br><a target=_blank href=http://svitovyt.blogspot.com/><img src=/icons/blogspot.jpg hspace=10>Blogspot</a><br><a target=_blank href=http://wikimapia.org/17114001/uk/Святилище-Триглав-човнового-типу><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.2237833333333,47.576125 ]
+    },
+    "properties": {
+    "name": "Святилище Перуна (Чортомлик, Нікополь)",
+    "description": "<h3 align=center>Святилище Перуна<br>Чортомлик, Нікополь</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/05/50/53/31_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/35078957/uk/Святилище-Перуна><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2480194444444,48.6019138888889 ]
+    },
+    "properties": {
+    "name": "Святилище Роду",
+    "description": "<h3 align=center>Святилище Роду<br></h3><br><a target=_blank href=http://wikimapia.org/32384478/Святилище-Роду><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0739722222222,47.8524333333333 ]
+    },
+    "properties": {
+    "name": "Святилище-обсерваторія доби бронзи. III-I тис. до н.д. (Запоріжжя)",
+    "description": "<h3 align=center>Святилище-обсерваторія доби бронзи. III-I тис. до н.д.<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/10/15/82_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Рідновіри на Святилищі-обсерваторії проводять щонедільні богославлення, а на великі свята відбуваються обрядодійства. Святилище є місцем прочанства. <br><a target=_blank href=https://svit.in.ua/><img src=https://sites.google.com/site/zaharchenkoyurij/troll.jpg hspace=10>Офіційний сайт</a><br><a target=_blank href=https://www.facebook.com/%D0%A0%D1%83%D1%81%D1%8C%D0%BA%D0%B5-%D0%9F%D1%80%D0%B0%D0%B2%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BD%D0%B5-%D0%9A%D0%BE%D0%BB%D0%BE-164656026901985/><img src=/icons/facebook.jpg hspace=10>Facebook</a><br><a target=_blank href=https://twitter.com/Svitovyt><img src=/icons/twitter.jpg hspace=10>Twitter</a><br><a target=_blank href=https://www.youtube.com/channel/UCbWUOXeSgnm9a5HXBuLHLgA/featured><img src=/icons/youtube.jpg hspace=10>YouTube</a><br><a target=_blank href=http://svitovyt.blogspot.com/><img src=/icons/blogspot.jpg hspace=10>Blogspot</a><br><a target=_blank href=http://wikimapia.org/7381295/uk/Святилище-обсерваторія-доби-бронзи-III-I-тис-до-н-д><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0764361111111,47.8489 ]
+    },
+    "properties": {
+    "name": "Святилище-Яйце доби бронзи, XX-XV ст. до н.д. (Запоріжжя)",
+    "description": "<h3 align=center>Святилище-Яйце доби бронзи, XX-XV ст. до н.д.<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/48/26/66_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>На святилищі встановлений образ Макоші (різьбярі: Вадим Літвінов і Микола Кардач) - Богиня Води і пряха людської Долі.<br>Святилище складається з кам&#39;яного Яйця, в &quot;жовтку&quot; якого знаходилося поховання жерця. Поруч розташований овал з подвійного кола каміння - жертовник. Розкопки 2000 р. <br><a target=_blank href=http://wikimapia.org/19065480/uk/Святилище-Яйце-доби-бронзи-XX-XV-ст-до-н-д><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.332575,47.6871555555555 ]
+    },
+    "properties": {
+    "name": "Слов&#39;янське дерев&#39;яне святилище (Григоровка)",
+    "description": "<h3 align=center>Слов&#39;янське дерев&#39;яне святилище<br>Григоровка</h3>Сучасне слов&#39;янське дерев&#39;яне святилище, різьбяр Вадим Літвінов. <br><a target=_blank href=http://wikimapia.org/31828544/uk/Слов-янське-дерев-яне-святилище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.2409305555556,47.8963527777778 ]
+    },
+    "properties": {
+    "name": "Слов&#39;янське капище м. Кривий Ріг",
+    "description": "<h3 align=center>Слов&#39;янське капище м. Кривий Ріг<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/79/51/29_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/24771630/uk/Слов-янське-капище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.1768416666667,48.1941972222222 ]
+    },
+    "properties": {
+    "name": "Стародавнє кам&#39;яне святилище (Микільське-на-Дніпрі)",
+    "description": "<h3 align=center>Стародавнє кам&#39;яне святилище<br>Микільське-на-Дніпрі</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/02/83/11/14_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Стародавнє кам&#39;яне святилище, частково досліджене Дмитром Яворницьким. На святилищі встановлено дерев&#39;яний образ Рода, який благословляє Перуна (різьбяр Вадим Літвінов), має пошкодження від невігласів. Можливо святилище використовувалося також для астрономічних спостережень. Поруч відомо ще дві кам&#39;яні закладки. Колись близько сучасного двору лісника стояла церква, переповідають, що каміння для її фундаменту тягали з цього святилища. Церква поруйнована комуністами, а з фундаменту дійсно стирчать валуни.<br><a target=_blank href=http://wikimapia.org/18322415/uk/Стародавнє-кам-яне-святилище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.5525666666667,50.3943583333333 ]
+    },
+    "properties": {
+    "name": "Храм Перуна на Лисій горі в Києві",
+    "description": "<h3 align=center>Храм Перуна на Лисій горі в Києві<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/02/46/99/52_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/2706631/uk/Капище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.3316388888889,47.8991527777778 ]
+    },
+    "properties": {
+    "name": "Язичницьке капище (Кривий Ріг)",
+    "description": "<h3 align=center>Язичницьке капище<br>Кривий Ріг</h3><br><a target=_blank href=http://wikimapia.org/30368809/uk/Язичницьке-капище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.5821777777778,44.5463194444444 ]
+    },
+    "properties": {
+    "name": "Язичницьке капище (Севастополь)",
+    "description": "<h3 align=center>Язичницьке капище<br>Севастополь</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/05/76/11/07_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Коло з каменів. Вогнище в центрі і кілька слідів від вогнищ за межами кола. Місце проведення обрядів слов&#39;янського язичництва<br><a target=_blank href=http://wikimapia.org/25390304/uk/Язичницьке-капище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.102625,51.5379194444444 ]
+    },
+    "properties": {
+    "name": "Язичницьке капище, Селезівка, Полісся",
+    "description": "<h3 align=center>Язичницьке капище, Селезівка, Полісся<br></h3><br>"
+    }
+  }
+]
+},
+old = {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.733151,46.54225 ]
+    },
+    "properties": {
+    "name": "Античне святилище на Жеваховій горі",
+    "description": "<h3 align=center>Античне святилище на Жеваховій горі<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/03/77/63/65_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Комплекс давньогрецьких споруд ритуального призначення V-IV століття до н. е.. Дослідники вважають його присвяченим давньогрецьким богиням Деметрі та Персефоні та називають одним з найкрупніших святилищ у Північному Причорномор&#39;ї цієї епохи.<br><a target=_blank href=https://uk.wikipedia.org/wiki/Античне_святилище_на_Жеваховій_горі><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/35481466/uk/Античне-святилище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.1649444444444,49.1851861111111 ]
+    },
+    "properties": {
+    "name": "Богит",
+    "description": "<h3 align=center>Богит<br></h3><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.1189972222222,48.336275 ]
+    },
+    "properties": {
+    "name": "Бушанський храмовий комплекс",
+    "description": "<h3 align=center>Бушанський храмовий комплекс<br></h3><br><a target=_blank href=http://spadok.org.ua/svyatylyscha/bushanskyy-rel-f-formalno-stylistychnyy-aspekt-atrybutsi><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.1797,49.2038805555556 ]
+    },
+    "properties": {
+    "name": "Городище «Ґовда»",
+    "description": "<h3 align=center>Городище «Ґовда»<br></h3>Давньослов&#39;янське язичницьке городище-святилище 10—13 століть.<br><a target=_blank href=http://uk.wikipedia.org/wiki/Ґовда_(городище)><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/27596710/uk/Городище-«Ґовда»><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.1858583333333,49.22045 ]
+    },
+    "properties": {
+    "name": "Городище «Звенигород»",
+    "description": "<h3 align=center>Городище «Звенигород»<br></h3>Давньослов&#39;янське язичницьке городище-святилище 10—14 століть.<br><a target=_blank href=http://uk.wikipedia.org/wiki/Звенигород_(городище)><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/27596699/ru/Городище-Звенигород><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 27.48725,50.6208416666667 ]
+    },
+    "properties": {
+    "name": "Древнеславянское капище м. Пилиповичи, м. Новоград-Волинський",
+    "description": "<h3 align=center>Древнеславянское капище м. Пилиповичи, м. Новоград-Волинський<br></h3><br><a target=_blank href=http://wikimapia.org/22208981/ru/Древнеславянское-капище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.5165194444444,50.4581944444444 ]
+    },
+    "properties": {
+    "name": "Капище в городищі Кия",
+    "description": "<h3 align=center>Капище в городищі Кия<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/05/09/56/70_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Розкопане В. Хвойкою у 1912 році.<br>Кожної неділі тут проводять обряди українські рідновіри.<br><a target=_blank href=http://wikimapia.org/1011929/uk/Капище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br><a target=_blank href=http://spadok.org.ua/svyatylyscha/yazychnytske-kapysche-kyya-na-starokyyivskiy-gori><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.3313583333333,47.8991638888889 ]
+    },
+    "properties": {
+    "name": "Кромлех (Кривий Ріг)",
+    "description": "<h3 align=center>Кромлех<br>Кривий Ріг</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/03/31/41/52_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/26739247/uk/Кромлех><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.732075,47.7808861111111 ]
+    },
+    "properties": {
+    "name": "Кромлех Мирове (Томаківський кромлех)",
+    "description": "<h3 align=center>Кромлех Мирове<br>Томаківський кромлех</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/02/83/11/07_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Рідкісним пам&#39;ятником археології є кромлех, який знаходиться біля самої траси Томаківка-Марганець в селі Мирове.<br>Археологічна пам&#39;ятка місцевого значення, курган 1254. mound.io.ua/s1176338<br>Кромлех споруджено біля могили ямної культури епохи енеоліту в II тис. до н.е. Виявлено і досліджено під час розкопок в 1920 році академіком Д.І. Яворницьким. Датується III – початком II тисячоліття до нашої ери (енеоліт – ранній бронзовий вік). Речових знахідок немає. Взято під охорону згідно Рішення виконкому Дніпропетровської обласної Ради депутатів трудящих № 618 від 8 серпня 1970 р. як курган. Охоронний № 1254.<br>Особливості конструкції:<br>Кам&#39;яне коло з великих гранітних брил перебувало під насипом кургану заввишки 3,5 м, діаметром – 30 м. В центрі яма розпластаної могили. Тут знаходився скорчений і пофарбований скелет без речей. Кільце кромлеха частково зруйновано дорогою. Додаткові дані про розкопки не збереглися.<br>Розміри деяких елементів кромлеха:<br>діаметр кромлеха – 21 м;<br>висота над поверхнею – 2 м;<br>висота могили в центрі – 1,3-1,5 м;<br>площа – 0,3 га;<br>висота над рівнем моря – 38,8 м<br><a target=_blank href=http://wikimapia.org/13348692/uk/Кромлех-Мирове-Томаківський-кромлех><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br><a target=_blank href=https://mound.io.ua/s1176338/kromleh_mirovoe><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.1271638888889,48.4532472222222 ]
+    },
+    "properties": {
+    "name": "Курган с кромлехом (Днепр)",
+    "description": "<h3 align=center>Курган с кромлехом<br>Днепр</h3><div align=center><img height=250 src=https://imgprx.livejournal.net/317727b25646ee31752a6a6b3ce103603d8dd598/NUOkRDpUP88AADhuTNHnYiKzXbB0aoD99zvCKrzsY3M9mq99DNW5-WYGUe9tTbl2Xlm3DRhA-Ow0D5M1GZTd-jq6XRc-_SQLIcCw3JWq9Wo></div><font size=-3>Фото з сайту <a href=http://imgprx.livejournal.net/>imgprx.livejournal.net</a></font><br>Курган находится на территории остатков екатеринославского кладбища.<br>Курган насыпан поверх кромлеха. Остатки кромлеха видны на юго-восточной стороне кургана (пара валунов выглядывающих из-под земли).<br>На вершине кургана выкопано 3 большие ямы. Также много ямок по всей территории кладбища - вероятнее всего, следы копателей.<br><a target=_blank href=http://wikimapia.org/37153577/ru/Курган-с-кромлехом><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br><a target=_blank href=sicheslavets.livejournal.com/214997.html><img src=/icons/troll.jpg hspace=10>Стаття</a> 1<br><a href=mound.io.ua/s1175506/kromleh_na_popov_myse><img src=/icons/troll.jpg hspace=10>Стаття 2</a><br><a target=_blank href=www.shukach.com/ru/node/358><img src=/icons/troll.jpg hspace=10>Стаття 3</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.3331083333333,48.1196416666667 ]
+    },
+    "properties": {
+    "name": "Недайводський кромлех",
+    "description": "<h3 align=center>Недайводський кромлех<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/05/35/82/92_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/27997072/uk/Археологічні-розкопки><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.4763055555556,50.0602194444444 ]
+    },
+    "properties": {
+    "name": "Реструкція Збруцького ідола (Переяслав-Хмельницький)",
+    "description": "<h3 align=center>Реструкція Збруцького ідола<br>Переяслав-Хмельницький</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/86/81/57_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Реконструкція. Збруцький ідол.<br><a target=_blank href=http://wikimapia.org/33088418/uk/Збруцьке-святилище-ХІ-століття><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.0586388888889,49.8453055555556 ]
+    },
+    "properties": {
+    "name": "Світовидове поле (Львів)",
+    "description": "<h3 align=center>Світовидове поле<br>Львів</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/03/24/61/18_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>На території парку, майже в самому його центрі, є пам’ятка – давнє капище «Світовидове поле». Якщо йти по Чернечій горі в напрямку до Музею народної архітектури та побуту, то з лівого боку бачимо електропідстанцію, а навпроти зліва якраз знаходиться згаданий об’єкт.<br>Його досліджувала група археологів у 1985-87рр. Розкопки не були завершені через трагічну загибель керівника експедиції Олександра Овчіннікова. Спершу науковці думали, що працюють на місці давнього городища, але у зв’язку з невеликою кількістю культурних пам’яток зробили висновок, що цей об’єкт – святилище, у якому проживала обмежена кількість людей. Пам’ятка мала форму яйця.<br><a target=_blank href=http://wikimapia.org/10589540/uk/Світовидове-поле><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br><a target=_blank href=http://zaxid.net/blogs/showBlog.do?park_znesinnya_zustrich_iz_olegom_zayachkivskim&objectId=1248956><img src=/icons/troll.jpg hspace=10>Стаття</a> 1<br><a href=www.svit.in.ua/sva/mi20.htm><img src=/icons/troll.jpg hspace=10>Стаття 2</a><br><a target=_blank href=http://spadok.org.ua/svyatylyscha/sakralne-znesinnya-lvova><img src=/icons/troll.jpg hspace=10>Стаття 3</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.1428638888889,47.7911055555556 ]
+    },
+    "properties": {
+    "name": "Святилище (Запоріжжя)",
+    "description": "<h3 align=center>Святилище<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/53/13/78_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Святилище у вигляді кола збудовано довільно із залишків кам&#39;яних споруд, що були стягнуті з поля і кинуті на купу. Нам не відомо, де вони раніше стояли і як були викладені. Швидше, належало каміння до культової споруди доби бронзи, які масово виявлені на Хортиці.<br><a target=_blank href=http://wikimapia.org/31960108/uk/Святилище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0601611111111,47.8350166666667 ]
+    },
+    "properties": {
+    "name": "Святилище Каракайка (Запоріжжя)",
+    "description": "<h3 align=center>Святилище Каракайка<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/06/43/56/39_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Святилище доби бронзи у б. Каракайка було відкрите і досліджене у 2013 р. Автор знахідки і керівник археологічних розкопок - Дмитро Никоненко.<br>Пам&#39;ятка є унікальною та мала дві стадії будівництва.<br>У добу бронзи (3-2 тис. до н.е.) на природному підвищенні було складено два кола із масивного каміння, одне в іншому.<br>Також був встановлений менгір та жертовний камінь, орієнтовані на захід Сонця у день літнього сонцестояння. Конструкція використовувалася для здійснення релігійних обрядів та астрономічних спостережень.<br>В скіфський час на місці святилища було здійснено поховання і після цього площа кам&#39;яної конструкції була засипана дрібним камінням, утворивши суцільну кам&#39;яну закладку.<br>З часом поховання було повністю пограбоване. Реконструкція святилища здійснена за підтримки ТОВ &quot;Соціальні ініціативи Запоріжжя&quot;. <br><a target=_blank href=http://wikimapia.org/37395086/uk/Святилище-Каракайка><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0592388888889,47.8580138888889 ]
+    },
+    "properties": {
+    "name": "Святилище скіфської доби (Запоріжжя)",
+    "description": "<h3 align=center>Святилище скіфської доби<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/04/09/16/72_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/27723217/uk/Святилище-скіфської-доби><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 27.5424611111111,49.2999555555556 ]
+    },
+    "properties": {
+    "name": "Святилище черняхівської культури",
+    "description": "<h3 align=center>Святилище черняхівської культури<br></h3><br><a target=_blank href=http://wikimapia.org/37429089/uk/Святилище-черняхівської-культури><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.855125,48.5447722222222 ]
+    },
+    "properties": {
+    "name": "Словянське Городище-Святилище (Бабин)",
+    "description": "<h3 align=center>Словянське Городище-Святилище<br>Бабин</h3>Ба?бин — слов&#39;янське городище-святилище на вершині останця, розташованого на правому березі Дністра неподалік однойменного села, що в Кельменецькому районі Чернівецької області.<br>Центральний майданчик круглої форми (діаметр 7 м) оточений ровом з виступами напівкруглої форми (ширина рову 2 м). З напільного боку по схилу останця проходять два дугоподібних ескарпи, які не доходять до обривів. У ровах знайдені вугілля, кальциновані кістки, уламки ліпного та гончарного посуду ІХ—Х ст.<br>Поруч з городищем розташоване велике синхронне поселення.<br><a target=_blank href=http://uk.wikipedia.org/wiki/Бабин_(городище)><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/34563656/uk/Словянське-Городище-Святилище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0740083333333,47.8571777777778 ]
+    },
+    "properties": {
+    "name": "Споруди культового призначення мідного віку (Запоріжжя)",
+    "description": "<h3 align=center>Споруди культового призначення мідного віку<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/03/57/33/24_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Комплекс кромлехів мідного віку є унікальною пам&#39;яткою археології та має взаємозв&#39;язок з курганною групою, що розташована поруч. Пам&#39;ятка була відкрита під час будівництва історико-культурного комплексу «Запорозька Січ» у 2005 році.<br>Археологічними розкопками 2006-2008 років було досліджено 12 кромлехів та 6 кам&#39;яних закладів різного розміру та часу. Споруди культового призначення були залишені мешканцями квітянської (група середньостогівської) культури наприкінці V початку IV тис. до н.е.<br>Культова споруда була законсервована і знаходиться під землею. На рівні сучасного ґрунту для огляду був виставлений муляж.  <br><a target=_blank href=http://wikimapia.org/27723190/uk/Споруди-культового-призначення-мідного-віку><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.6576527777778,49.83805 ]
+    },
+    "properties": {
+    "name": "Язичницьке капище (Буки)",
+    "description": "<h3 align=center>Язичницьке капище<br>Буки</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/05/14/63/99_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/31892172/uk/Язичницьке-капище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  }
+]
+},
+museums = {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.112525,47.8127833333333 ]
+    },
+    "properties": {
+    "name": "Меморіально-туристичний комплекс &quot;Скіфський стан&quot; (Запоріжжя)",
+    "description": "<h3 align=center>Меморіально-туристичний комплекс &quot;Скіфський стан&quot;<br>Запоріжжя</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/00/81/05/54_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>П&#39;ята курганна група (колись там було 28 курганів, а вціліло лише 3) розташована у найвищій точці Хортиці – висота над рівнем Дніпра 59 м, над рівнем моря – 72 м. На цьому місці цілюща енергетична зваба, відкриваються чудові краєвиди. Відтак тут у листопаді 2005 року вперше в Україні розпочалися роботи з відновлення історичного ландшафту. До трьох вцілілих курганів додалися ще вісім: один насипаний на місці дослідженого; два на місці зруйнованих; два – у вигляді макетів, а ще два рукотворні пагорби постали один у вигляді стилізованого святилища скіфського Бога війни Арея, а другий – своєрідний постамент для стилізованої козацької вежі. На курганах установлено стели доби бронзи, половецькі статуї.<br>На західній околиці комплексу розташовано музей кам&#39;яних витворів, який склали статуї Богів гармани, ступи, корита, зернотерки, жорна та хрести козацького типу виявлені у довколишніх селах і привезені на Хортицю.<br>Комплекс використовуєся у пізнавальному, культурно- та науково-просвітницькому, а також у туристичному спрямуванні. Він став початком відновлення усього Скіфського шляху.<br><a target=_blank href=http://wikimapia.org/440039/uk/Меморіально-туристичний-комплекс-Скіфський-стан-Зорова-могила><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br><a target=_blank href=https://svit.in.ua/sva/mi34.htm><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.4664833333333,46.9491666666667 ]
+    },
+    "properties": {
+    "name": "Музей &quot;Первісне мистецтво Кам&#39;яної могили&quot;",
+    "description": "<h3 align=center>Музей &quot;Первісне мистецтво Кам&#39;яної могили&quot;<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/01/66/70/66_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/2727957/Museum-building><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  }
+]
+},
+etno = {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 37.7275361111111,47.9859166666667 ]
+    },
+    "properties": {
+    "name": "Большое Купальское святилище (Донецк)",
+    "description": "<h3 align=center>Большое Купальское святилище<br>Донецк</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/01/93/37/12_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://wikimapia.org/21513336/ru/Большое-Купальское-святилище><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.2244027777778,47.5755611111111 ]
+    },
+    "properties": {
+    "name": "Співоче Поле",
+    "description": "<h3 align=center>Співоче Поле<br></h3>Тут проводяться різноманітні фольклорні фестивалі.<br><a target=_blank href=http://wikimapia.org/35050737/ru/Співоче-поле><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  }
+]
+},
+spring = {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.58125,48.7920777777778 ]
+    },
+    "properties": {
+    "name": "Водоспад Дівочі сльози і Грот Пустельника",
+    "description": "<h3 align=center>Водоспад Дівочі сльози і Грот Пустельника<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/00/93/85/40_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>В урочищі Пустельня був виявлений грот, вирубаний у скелі. Точно невідомо, коли і як тут з&#39;явилася печера, але у 19 столітті тут жив монах-відлюдник. Він займався різьбленням по каменю. До сьогодні збереглося одне його творіння – статуя святого Онуфрія<br>Древнє капище, позначене як Лиса гора на польській мапі 1925 року<br><a target=_blank href=http://wikimapia.org/13064555/uk/Водоспад-Дівочі-сльози-і-Грот-Пустельника><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br> 1<br><a href=upload.wikimedia.org/wikipedia/uk/e/e9/Mapa-1-max.jpg><img src=/icons/troll.jpg hspace=10>Стаття 2</a><br>"
+    }
+  }
+]
+},
+stones = {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.0611388888889,49.8524611111111 ]
+    },
+    "properties": {
+    "name": "Гора Баба Род (Львів)",
+    "description": "<h3 align=center>Гора Баба Род<br>Львів</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/02/45/88/03_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Припускають, що на горі Род (висотою 294 м над рівнем моря, інші назви Баба, Рот) між нинішніми вулицями Старознесенською, Польовою та залізничною колією було язичницьке капище та давнє городище.<br><a target=_blank href=http://wikimapia.org/17661276/uk/Гора-Баба-Род><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.0644416666667,44.8500027777778 ]
+    },
+    "properties": {
+    "name": "Змеиная пещера (Йилан-Коба)",
+    "description": "<h3 align=center>Змеиная пещера<br>Йилан-Коба</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/01/25/92/55_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Змеинный грот (Змеинная пещера) — пещера в Крыму, находится в обрывистом склоне Внутренней гряды Крымских гор рядом с селом Левадки. Одна из красивейших и самая большая карстовая пещера предгорья. С 1969 года — памятник природы.<br>В VII—VI веках до н. э. в пещере было родовое святилище народа кизил-кобинской культуры. В средние века — языческое капище. В пещере обнаружены обломки лепной посуды, костяные проколки, кости жертвенного скота, в особых случаях происходили жертвоприношения человека.<br><a target=_blank href=http://ru.wikipedia.org/wiki/Змеиная_(пещера)><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/742645/ru/Змеиная-пещера-Йилан-Коба><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0700666666667,47.8628 ]
+    },
+    "properties": {
+    "name": "Змієва печера (Запоріжжя)",
+    "description": "<h3 align=center>Змієва печера<br>Запоріжжя</h3><div align=center><img height=250 src=https://svit.in.ua/foto/zm2.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Змієва печера розташована біля урочища Чорна скеля (Січові Ворота) в північній частині острова з боку Старого Дніпра. Над Змієвою печерою стоїть кам&#39;яний слов&#39;янський образ Бога VI–VIII ст., який був поставлений там першим директором хортицького музею Арнольдом Сокульським близько 1975 р. Привезена статуя з гирла р. Вільнянка (Вільнянський район Запорізької обл.).<br>Змієва печера найбільша серед відомих на Хортиці, вона являє собою розщілину в гранітній скелі. Доступ до неї складний, тому майже ніхто її не відвідує. Сама вона невелика розміром і сира, що унеможливлює довге перебування людини, тим більше ночівлю.<br><a target=_blank href=http://wikimapia.org/31813219/uk/Змієва-печера><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br><a target=_blank href=svit.in.ua/sva/mi14.htm><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.4700833333333,46.9503361111111 ]
+    },
+    "properties": {
+    "name": "Кам&#39;яна могила (пос. Мирний Мелітопольського р-ну)",
+    "description": "<h3 align=center>Кам&#39;яна могила<br>пос. Мирний Мелітопольського р-ну</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/00/08/57/23_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br><br><a target=_blank href=http://www.stonegrave.org/><img src= hspace=10>Офіційний сайт</a><br><a target=_blank href=https://uk.wikipedia.org/wiki/Кам&#39;яна_Могила><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/1861446/Kamyana-Mohyla><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.7312444444444,48.300575 ]
+    },
+    "properties": {
+    "name": "Лисина Космацька",
+    "description": "<h3 align=center>Лисина Космацька<br></h3><br><a target=_blank href=https://uk.wikipedia.org/wiki/Лисина_Космацька><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/28919105/ru/Гора-Лисина-Космацка><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 38.9259694444444,48.3978333333333 ]
+    },
+    "properties": {
+    "name": "Мергелева гряда (Степанівка, Луганщина)",
+    "description": "<h3 align=center>Мергелева гряда<br>Степанівка, Луганщина</h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/00/74/13/31_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Комплексна археологiчна пам&#39;ятка &quot;Мергелева гряда&quot; розташована бiля села Степанiвка Перевальського району Луганської областi. Вона була вiдкрита мiсцевим археологом-аматором Володимиром Аркадiйовичем Парамоновим у 2004 роцi разом з учнями мiсцевих шкiл - членами Алчевського клубу любителiв археологiї.<br><a target=_blank href=http://uk.wikipedia.org/wiki/Мергелева_гряда_(археологічна_пам&#39;ятка)><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/10341622/uk/«Мергелева-гряда»><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.1247055555556,48.8525333333333 ]
+    },
+    "properties": {
+    "name": "Павлівський Камінь",
+    "description": "<h3 align=center>Павлівський Камінь<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/05/80/82/97_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Павлівський камінь – це геологічне утворення висотою 30 м. Воно знаходиться у трикутнику лісового масиву, приблизно на однаковій відстані від трьох населених пунктів — сіл Князівське, Підлісся і Дуба. Про його унікальність свідчить той факт, що чеські будівельники змінили напрямок при будівництві магістрального газопроводу Уренгой-Помари-Ужгород, щоб зберегти дивовижну скелю. За однією з легенд, назва каменю походить від імені опришка, який врятував своїх побратимів від польських вояк. На неприступній скелі Павло цілу ніч грав на скрипці, і це дало змогу решті сміливцям спуститися і втекти з протилежного боку каменю. За іншою версією, в язичницькі часи тут переховувався проповідник Павло, який охрестив багато місцевих жителів. На думку істориків, в давнину цей камінь слугував своєрідним капищем. Про це свідчить чашове заглиблення для жертовного вогню на вершині каменю та ряд ліній обабіч скелі<br><a target=_blank href=https://uk.wikipedia.org/wiki/Павлівський_Камінь><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/24889022/uk/Павлівський-Камінь><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br><a target=_blank href=http://spadok.org.ua/megalitychni-kompleksy-karpat/pavlivskyy-kamin><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.9101416666667,48.2371027777778 ]
+    },
+    "properties": {
+    "name": "Терношорське святилище",
+    "description": "<h3 align=center>Терношорське святилище<br></h3><div align=center><img height=250 src=http://photos.wikimapia.org/p/00/05/61/36/94_big.jpg></div><font size=-3>Фото з сайту <a href=http://wikimapia.org/>wikimapia.org</a></font><br>Відомо, що тут поклонялись культу Жінки-матері. Серед найцікавіших місцевих знахідок – статуя жінки, кам’яний диск, фалічний камінь.<br><a target=_blank href=https://uk.wikipedia.org/wiki/Терношорська_Лада><img src=/icons/wikipedia.jpg hspace=10>Wikipedia</a><br><a target=_blank href=http://wikimapia.org/32036830/uk/Скеля-Терношорська-Лада><img src=/icons/wikimapia.jpg hspace=10>Wikimapia</a><br><a target=_blank href=http://spadok.org.ua/svyatylyscha/ternoshorske-skelne-svyatylysche-v-karpatach><img src=/icons/troll.jpg hspace=10>Стаття</a>"
+    }
+  }
+]
+},
+trees = {
+  "type": "FeatureCollection",
+  "features": []
+},
+attraction = {
+  "type": "FeatureCollection",
+  "features": []
+}

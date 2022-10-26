@@ -1,0 +1,40 @@
+.leaflet-top {
+	top: 20px;
+	}
+.leaflet-control-layers-toggle {
+    background-image: url(/static/images/layers.png);
+    }
+.leaflet-retina .leaflet-control-layers-toggle {
+    background-image: url(/static/images/layers-2x.png);
+}
+.leaflet-default-icon-path {
+	background-image: url(/static/images/marker-icon.png);
+	}
+
+.fullscreen-icon { background-image: url(/static/images/icon-fullscreen.png); }
+.leaflet-retina .fullscreen-icon { background-image: url(/static/images/icon-fullscreen-2x.png); }
+
+.leaflet-control-search.search-load .search-input {
+	background: url('/static/images/loader.gif') no-repeat center right #fff;
+}
+.leaflet-control-search .search-cancel {
+    background: url('/static/images/search-icon.png') no-repeat 0 -46px;
+}
+.leaflet-control-search .search-button {
+    background: url('/static/images/search-icon.png') no-repeat 5px 5px #fff;
+}
+.leaflet-control-search .search-button:hover {
+	background: url('/static/images/search-icon.png') no-repeat 5px 3px #fafafa;
+}
+
+.leaflet-control-defaultextent-toggle {
+    background-image: url('/static/images/leaflet.defaultextent.png');
+}
+
+#map {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 55px;
+    bottom: 10px;
+}
