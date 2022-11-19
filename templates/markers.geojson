@@ -1,0 +1,35 @@
+{% global_flag = False -%}
+var 
+{%- for i in range(0, len(features_list), 2) -%}
+  {% if global_flag -%} {# Кома у кінці файлу. Пишемо її на початку, щоб не видаляти після останньої позиції}
+    ,                   {# пропускаємо перед першим входженням #}
+  {% else -%}
+    {% global_flag = True -%}
+  {% endif %}
+{{- features_list[i] }} = {
+   "type": "FeatureCollection",
+   "features": [
+  {% if features_list[i+1] -%}
+  {% set flag = False -%}
+    {% for feature in features_list[i+1] -%}
+      {% if flag -%} {# Кома, що розділяє словники з окремими позначками -%}
+        ,            {# пропускаємо перед першим входженням #}
+      {% else -%}
+        {% flag = True -%}
+      {% endif -%}
+    {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ {{ feature[0] }},{{ feature[1] }} ]
+    },
+    "properties": {
+    "name": "{{ feature[2] }}",
+    "description": "{{ feature[3] }}"
+    }
+  }
+    {% endfor -%}
+  {% endif -%}
+]
+}, {# цю кому потрібно прибирати після останньої ітерації #}
+{% endfor -%}

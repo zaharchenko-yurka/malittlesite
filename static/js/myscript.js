@@ -58,7 +58,7 @@ var attractionLay = L.geoJson(attraction, {
 	});
 
 //подключаем базовые слои	
-	var humanitarian = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+var humanitarian = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'});
 var esriSat = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.jpg', {
 	attribution: '&copy; <a href="https://www.esri.com/about-esri/">Esri</a>'});
