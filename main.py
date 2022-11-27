@@ -1,14 +1,55 @@
 import sqlite3
+
 from flask import Flask, render_template, request, redirect, session, url_for, make_response
+from flask_sqlalchemy import SQLAlchemy
+
+# from admin.admin import admin
+from utils import get_geojson
 
 site = Flask(__name__)
 site.config['SECRET_KEY'] = 'sd&^*%59SA5(*&egflaLK:Jfa;jfc;oWCVahnp'
+site.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+
+db = SQLAlchemy(site)
+# site.register_blueprint(admin, url_prefix='/admin')
+
+class Features(db.Model):
+    __tablename__ = "features"
+
+    feature_id = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String(100))
+    description = db.Column(db.Text)
+    type = db.Column(db.String(30))
+    longitude = db.Column(db.String(16))
+    latitude = db.Column(db.String(16))
+    active = db.Column(db.Boolean, default = True)
+
+class Users(db.Model):
+    __tablename__ = "users"
+
+    user_id = db.Column(db.Integer, primary_key = True)
+    username = db.Column(db.String(100), nullable = False)
+    password = db.Column(db.String(100), nullable = False)
+    role = db.Column(db.String(16))
+    active = db.Column(db.Boolean, default = False)
+    email = db.Column(db.String(100), nullable = False)
+
+class Message(db.Model):
+    __tablename__ = "message"
+
+    message_id = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String(100), nullable = False)
+    message = db.Column(db.Text)
+    username = db.Column(db.String(32))
+    contact = db.Column(db.String(32))
+    longitude = db.Column(db.String(16), nullable = False)
+    latitude = db.Column(db.String(16), nullable = False)
+    zoom = db.Column(db.String(2))
 
 main_menu = [
     {'name': 'Новини', 'url': 'news'},
-    {'name': 'Про нас', 'url': 'about'},
-    {'name': 'Увійти', 'url': 'login'},
-    {'name': 'Вийти', 'url': 'logout'}
+    {'name': 'ЧаПи', 'url': 'faq'},
+    {'name': 'Увійти', 'url': 'admin/login'}
 ]
 
 @site.route('/index')
@@ -21,14 +62,27 @@ def index():
         index.html або код '201'
     """
     if request.method == "POST":
-        with sqlite3.connect('instance/site.db') as db:
-            cur = db.cursor()
-            message = (request.form['name'], request.form['message'], request.form['username'],
-                        request.form['contact'], request.form['longitude'], request.form['latitude'],
-                        request.form['zoom'])
-            cur.execute("""INSERT INTO message
-                        (name, message, username, contact, longitude, latitude, zoom)
-                        VALUES (?,?,?,?,?,?,?)""", message)
+        try:
+            msg = Message(name = request.form['name'],
+                        message = request.form['message'],
+                        username = request.form['username'],
+                        contact = request.form['contact'],
+                        longitude = request.form['longitude'],
+                        latitude = request.form['latitude'],
+                        zoom = request.form['zoom'])
+            db.session.add(msg)
+            db.session.commit()
+        except:
+            db.session.rollback()
+            print('Шось не то з БД')
+        # with sqlite3.connect('instance/site.db') as db:
+        #     cur = db.cursor()
+        #     message = (request.form['name'], request.form['message'], request.form['username'],
+        #                 request.form['contact'], request.form['longitude'], request.form['latitude'],
+        #                 request.form['zoom'])
+            # cur.execute("""INSERT INTO message
+            #             (name, message, username, contact, longitude, latitude, zoom)
+            #             VALUES (?,?,?,?,?,?,?)""", message)
         return '201'
     else:
         return render_template('index.html', main_menu=main_menu), 200
@@ -37,84 +91,18 @@ def index():
 def page404(error):
     return render_template('page404.html', main_menu=main_menu), 404
 
-@site.route('/login', methods = ['POST', 'GET'])
-def login():
-    if 'userLogged' in session:
-        return redirect('/admin')
-    elif request.method == 'POST':
-        with sqlite3.connect('instance/site.db') as db:
-            cur = db.cursor()
-            cur.execute(f"""--sql SELECT password, active FROM users
-                        WHERE username = '{request.form['username']}'
-                        """)
-            password, active = cur.fetchone()
-        if password == request.form['password'] and active:
-            session['userLogged'] = request.form['username']
-            main_menu[2] = {'name': 'Адмінка', 'url': 'admin'}
-            return redirect(url_for('admin'))
-    else:
-        return render_template('login.html', main_menu=main_menu), 200
-    
-@site.route('/admin')
-def admin():
-    if 'userLogged' not in session:
-        return redirect(url_for('index'))
-    else:
-        return 'Йа адмінко!'
-
-@site.route('/logout') # чось не працює...
-def logout():
-    # remove the username from the session if it's there
-    session.pop(session['userLogged'], None)
-    return redirect(url_for('index'))
-
 @site.route('/markers')
 def markers():
+    """Формує динамічний markers.geojson із таблиці features в базі даних.
+    """    
     features_list = []
     types = ['sanctuarys', 'old', 'museums', 'etno', 'spring', 'stones', 'trees', 'attraction']
-    with sqlite3.connect('instance/site.db') as db:
-        cur = db.cursor()
-        for feature_type in types:
-            features_list.append(feature_type)
-            cur.execute(f"""SELECT longitude, latitude, name, description
-                       FROM features
-                       WHERE type = '{feature_type}' AND active = 'true'""")
-            features = cur.fetchall()
-            features_list.append(features)
-            #  отримуємо список: ['тип_маркера', [('широта', 'довгота', 'назва', 'опис'), (), 'наступний_тип_маркера' ...], ... ]
-    global_flag = False
-    markers_geojson = 'var '
-    for i in range(0, len(features_list), 2):
-        if global_flag:             # Кома у кінці файлу. Пишемо її на початку, щоб не видаляти після останньої позиції
-            markers_geojson += ''',
-'''                                 # пропускаємо перед першим входженням
-        else:
-            global_flag = True
-        markers_geojson += features_list[i] + ''' = {
-    "type": "FeatureCollection",
-    "features": ['''
-        if features_list[i+1]:
-            flag = False
-            for feature in features_list[i+1]:
-                if flag:                    # Кома, що розділяє словники з окремими позначками
-                    markers_geojson += ''', ''' # пропускаємо перед першим входженням
-                else:
-                    flag = True
-                markers_geojson += '''
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates":  [ ''' + feature[0] + ',' + feature[1] + ''' ]
-        },
-        "properties": {
-        "name": "''' + feature[2] + '''",
-        "description": "''' + feature[3] + '''"
-        }
-    }'''
-        markers_geojson += ''']
-}'''
-    resp = make_response(markers_geojson)
+    for feature_type in types:
+        features_list.append(feature_type)
+        features = Features.query.filter_by(type = feature_type).all()
+        features_list.append(features)
+
+    resp = make_response(get_geojson(features_list=features_list))
     resp.headers['Content-Type'] = 'application/geojson'
     return resp
 
