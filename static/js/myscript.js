@@ -78,8 +78,7 @@ var map = new L.map('map', {
   position: 'topleft'
   }
 }); 
-		
-var hash = new L.Hash(map); //подключили отображение координат в строке адреса
+
 L.control.defaultExtent().addTo(map); //подключили кнопку "Домой""
 
 //пробуем кластеризовать
