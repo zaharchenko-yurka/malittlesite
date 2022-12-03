@@ -1,5 +1,3 @@
-import sqlite3
-
 from flask import Flask, render_template, request, redirect, session, url_for, make_response
 from flask_sqlalchemy import SQLAlchemy
 
@@ -24,6 +22,20 @@ class Features(db.Model):
     latitude = db.Column(db.String(16))
     active = db.Column(db.Boolean, default = True)
 
+    def __str__ (self):
+        return '''
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates":  [ ''' + self.longitude + ',' + self.latitude + ''' ]
+        },
+        "properties": {
+        "name": "''' + self.name + '''",
+        "description": "''' + self.description + '''"
+        }
+    }'''
+
 class Users(db.Model):
     __tablename__ = "users"
 
@@ -46,10 +58,11 @@ class Message(db.Model):
     latitude = db.Column(db.String(16), nullable = False)
     zoom = db.Column(db.String(2))
 
+# from models import *
+
 main_menu = [
     {'name': 'Новини', 'url': 'news'},
-    {'name': 'ЧаПи', 'url': 'faq'},
-    {'name': 'Увійти', 'url': 'admin/login'}
+    {'name': 'ЧаПи', 'url': 'faq'}
 ]
 
 @site.route('/index')
@@ -72,17 +85,10 @@ def index():
                         zoom = request.form['zoom'])
             db.session.add(msg)
             db.session.commit()
+            site.logger.info('Мєссагу успішно записано до БД')
         except:
             db.session.rollback()
-            print('Шось не то з БД')
-        # with sqlite3.connect('instance/site.db') as db:
-        #     cur = db.cursor()
-        #     message = (request.form['name'], request.form['message'], request.form['username'],
-        #                 request.form['contact'], request.form['longitude'], request.form['latitude'],
-        #                 request.form['zoom'])
-            # cur.execute("""INSERT INTO message
-            #             (name, message, username, contact, longitude, latitude, zoom)
-            #             VALUES (?,?,?,?,?,?,?)""", message)
+            site.logger.error('Шось не то з БД - повідомлення від користувача не додано')
         return '201'
     else:
         return render_template('index.html', main_menu=main_menu), 200
@@ -99,7 +105,7 @@ def markers():
     types = ['sanctuarys', 'old', 'museums', 'etno', 'spring', 'stones', 'trees', 'attraction']
     for feature_type in types:
         features_list.append(feature_type)
-        features = Features.query.filter_by(type = feature_type).all()
+        features = Features.query.filter_by(type = feature_type, active = 'true').all()
         features_list.append(features)
 
     resp = make_response(get_geojson(features_list=features_list))

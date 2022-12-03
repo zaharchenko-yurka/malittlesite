@@ -31,18 +31,7 @@ def get_geojson(features_list: list) -> str:
                     markers_geojson += ''', ''' # пропускаємо перед першим входженням
                 else:
                     flag = True
-                markers_geojson += '''
-    {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates":  [ ''' + feature.longitude + ',' + feature.latitude + ''' ]
-        },
-        "properties": {
-        "name": "''' + feature.name + '''",
-        "description": "''' + feature.description + '''"
-        }
-    }'''
+                markers_geojson += str(feature)
         markers_geojson += ''']
 }'''
     return markers_geojson
