@@ -3,8 +3,8 @@ from wtforms import StringField, SubmitField, BooleanField, PasswordField
 from wtforms.validators import DataRequired, Email, Length, EqualTo
 
 class LoginForm(FlaskForm):
-    email = StringField("E-mail: ", validators=[Email("Невірний формат e-mail")])
-    password = PasswordField("Пароль: ", validators=[DataRequired(), Length(min=6, max=100, message='Пароль має бути не коротше 6 символів')])
+    email = StringField(description="E-mail", validators=[Email("Невірний формат e-mail")])
+    password = PasswordField(description="Пароль", validators=[DataRequired(), Length(min=6, max=100, message='Пароль має бути не коротше 6 символів')])
     remember_me = BooleanField("Запам'ятати мене", default=False)
     submit = SubmitField("Вхід")
 

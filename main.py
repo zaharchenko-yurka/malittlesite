@@ -1,14 +1,12 @@
 from flask import Flask, render_template, request, make_response
 
-from models import db, Features, Message
+from models import site, db, Features, Message, Users
 from admin.admin import admin
 from utils import get_geojson
 
-site = Flask(__name__)
-site.config['SECRET_KEY'] = 'sd&^*%59SA5(*&egflaLK:Jfa;jfc;oWCVahnp'
-site.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 
-db.init_app(site)
+#db.init_app(site)
+
 site.register_blueprint(admin, url_prefix='/admin')
 
 main_menu = [
@@ -51,12 +49,12 @@ def page404(error):
 @site.route('/markers')
 def markers():
     """Формує динамічний markers.geojson із таблиці features в базі даних.
-    """    
+    """
     features_list = []
     types = ['sanctuarys', 'old', 'museums', 'etno', 'spring', 'stones', 'trees', 'attraction']
     for feature_type in types:
         features_list.append(feature_type)
-        features = Features.query.filter_by(type = feature_type, active = 'true').all()
+        features = Features.query.filter_by(type=feature_type, active='true').all()
         features_list.append(features)
 
     resp = make_response(get_geojson(features_list=features_list))

@@ -1,5 +1,14 @@
+from flask import Flask
+from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
-db = SQLAlchemy()
+from werkzeug.security import generate_password_hash, check_password_hash
+
+
+site = Flask(__name__)
+site.config['SECRET_KEY'] = 'sd&^*%59SA5(*&egflaLK:Jfa;jfc;oWCVahnp'
+site.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+
+db = SQLAlchemy(site)
 
 class Features(db.Model):
     __tablename__ = "features"
@@ -26,7 +35,7 @@ class Features(db.Model):
         }
     }'''
 
-class Users(db.Model):
+class Users(db.Model, UserMixin):
     __tablename__ = "users"
 
     user_id = db.Column(db.Integer, primary_key = True)
@@ -35,6 +44,18 @@ class Users(db.Model):
     role = db.Column(db.String(16))
     active = db.Column(db.Boolean, default = False)
     email = db.Column(db.String(100), nullable = False)
+
+    def __repr__(self):
+	    return "<{}:{}>".format(self.user_id, self.username)
+
+    def set_password(self, password):
+	    self.password_hash = generate_password_hash(password)
+
+    def check_password(self,  password):
+	    return check_password_hash(self.password, password)
+
+    def get_id(self):
+        return str(self.user_id)
 
 class Message(db.Model):
     __tablename__ = "message"
