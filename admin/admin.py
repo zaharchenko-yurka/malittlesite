@@ -1,5 +1,5 @@
 from flask import Blueprint, redirect, url_for, render_template
-from flask_login import LoginManager, login_required, login_user, current_user
+from flask_login import LoginManager, login_required, login_user, current_user, logout_user
 
 from admin.forms import *
 from models import site, db, Users
@@ -36,17 +36,39 @@ def login():
         else:
             return redirect(url_for('admin.login'))
     else:
-        return render_template('admin/login.html', admin_menu=admin_menu, form=form)
+        return render_template('admin/login.html', form=form)
 
-@admin.route('/register')
+@admin.route('/register', methods = ['POST', 'GET'])
 def register():
-    pass
+    if current_user.is_authenticated:
+        return redirect(url_for('admin.adminka'))
+    form = RegisterForm()
+    if form.validate_on_submit():
+        try:
+            new_user = Users(username=form.user_name.data, email=form.email.data, active=False, role='cadet')
+            new_user.set_password(form.password.data)
+            db.session.add(new_user)
+            db.session.commit()
+        except:
+            db.session.rollback()
+            site.logger.error('Помилка запису БД')
+            return redirect(url_for('admin.login'))
+        site.logger.info('Зареєстрований!')
+        return redirect(url_for('admin.adminka'))
+    else:
+        return render_template('admin/register.html', form=form)
 
 @admin.route('/')
-@login_required
+@login_required # https://flask-user.readthedocs.io/en/v0.6/authorization.html
 def adminka():
         return 'Йа адмінко!'
 
 @admin.route('forgot_password')
 def forgot_password():
     pass
+
+@admin.route('/logout/')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('admin.login'))

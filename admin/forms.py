@@ -9,8 +9,8 @@ class LoginForm(FlaskForm):
     submit = SubmitField("Вхід")
 
 class RegisterForm(FlaskForm):
-    user_name = StringField("Користувач: ", validators=[DataRequired("Назвіть себе, бо якось невдобно")])
-    email = StringField("E-mail: ", validators=[Email("Невірний формат e-mail")])
-    password = PasswordField("Пароль: ", validators=[DataRequired(), Length(min=6, max=100, message='Пароль має бути не коротше 6 символів')])
-    pas_verification = PasswordField("Пароль: ", validators=[EqualTo('password', 'Паролі не збігаються')])
+    user_name = StringField(description="Користувач: ", validators=[DataRequired("Назвіть себе, бо якось невдобно")])
+    email = StringField(description="E-mail: ", validators=[Email("Невірний формат e-mail")])
+    password = PasswordField(description="Пароль: ", validators=[DataRequired(), Length(min=6, max=100, message='Пароль має бути не коротше 6 символів')])
+    pas_verification = PasswordField(description="Ще раз пароль: ", validators=[EqualTo('password', 'Паролі не збігаються')])
     submit = SubmitField("Надіслати")

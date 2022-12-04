@@ -48,11 +48,11 @@ class Users(db.Model, UserMixin):
     def __repr__(self):
 	    return "<{}:{}>".format(self.user_id, self.username)
 
-    def set_password(self, password):
-	    self.password_hash = generate_password_hash(password)
+    def set_password(self, passwordy):
+	    self.password = generate_password_hash(passwordy)
 
-    def check_password(self,  password):
-	    return check_password_hash(self.password, password)
+    def check_password(self,  passwordy):
+	    return check_password_hash(self.password, passwordy)
 
     def get_id(self):
         return str(self.user_id)

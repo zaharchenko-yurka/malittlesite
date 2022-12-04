@@ -1,7 +1,7 @@
 {% extends 'admin/base.html' %}
 
 {% block title %}
-Paganmap - Login
+Paganmap - Register
 {% endblock %}
 
 {% block body %}
@@ -11,15 +11,15 @@ Paganmap - Login
 	background-color: #c9c9c9;
 	height: 100vh;
   }</style>
-<div id="login">
+<div id="register">
     <div class="container">
         <div id="login-row" class="row justify-content-center align-items-center">
             <div id="login-column" class="col-md-6">
                 <div id="login-box" class="col-md-12">
-                    <form id="login-form" class="form" action="{{ url_for('admin.login') }}" method="post">
-                        <h3 class="text-center text-info">Вхід</h3>
+                    <form id="login-form" class="form" action="{{ url_for('admin.register') }}" method="post">
+                        <h3 class="text-center text-info">Реєстрація</h3>
                         {{ form.hidden_tag() }}
-                        {% for field in form if field.name not in ['csrf_token', 'remember_me', 'submit'] -%}
+                        {% for field in form if field.name not in ['csrf_token', 'submit'] -%}
                         <div class="form-group">
                             {% if field.errors %}
                             {{ field(class="form-control invalid")}}
@@ -34,14 +34,7 @@ Paganmap - Login
                         </div>
                         {% endfor %}
                         <div class="form-group">
-                            {{ form.remember_me.label(class="text-info") }} {{ form.remember_me }}
-                            <br>
                             {{ form.submit(class="btn btn-info btn-md") }}
-                        </div>
-                        <div id="register-link" class="text-right">
-                            <a href="{{ url_for('admin.register') }}" class="text-info">Приєднатись до команди</a>
-                            <br>
-                            <a href="{{ url_for('admin.forgot_password') }}" class="text-info">Забули пароль?</a>
                         </div>
                     </form>
                 </div>
