@@ -3,6 +3,7 @@ from flask_login import LoginManager, login_required, login_user, current_user, 
 
 from admin.forms import *
 from models import site, db, Users
+from admin.requires import admin_required, moderator_required
 
 admin = Blueprint('admin', __name__, template_folder='templates', static_folder='static')
 
@@ -11,7 +12,7 @@ login_manager.login_view = 'admin.login' #  визначає функцію по
 login_manager.login_message = 'Будь ласочка, авторизуйтесь'
 
 admin_menu = [
-    {'name': 'Записи', 'url': 'features'},
+    {'name': 'Записи', 'url': '/admin'},
     {'name': 'Користувачі', 'url': 'users'},
     {'name': 'Новини', 'url': 'news'},
     {'name': 'ЧаПи', 'url': 'faq'}
@@ -59,9 +60,19 @@ def register():
         return render_template('admin/register.html', form=form)
 
 @admin.route('/')
-@login_required # https://flask-user.readthedocs.io/en/v0.6/authorization.html
+@moderator_required # https://flask-user.readthedocs.io/en/v0.6/authorization.html
 def adminka():
-        return 'Йа адмінко!'
+    return render_template('admin/adminka.html', menu=admin_menu)
+
+@admin.route('/news')
+@admin_required
+def news():
+    return render_template('admin/news.html', menu=admin_menu)
+
+@admin.route('/faq')
+@admin_required
+def faq():
+    return render_template('admin/faq.html', menu=admin_menu)
 
 @admin.route('forgot_password')
 def forgot_password():
